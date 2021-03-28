@@ -20,24 +20,28 @@
 
 	<build>
 		<plugins>
+			
+
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.2</version>
-				<extensions>true</extensions>
-				<configuration>
-				<cloudHubDeployment>
-      				<uri>https://anypoint.mulesoft.com</uri>
-      				<muleVersion>${app.runtime}</muleVersion>
-     				<username>DanMarch2021</username>
-     				<password>Dan@salesforce19</password>
-      				<applicationName>MuleteamCICDTest</applicationName>
-      				<environment>Sandbox</environment>
-      				
-       			</cloudHubDeployment>
-  		    	</configuration>
-  		    	
-			</plugin>
+			  <groupId>org.mule.tools.maven</groupId>
+			  <artifactId>mule-maven-plugin</artifactId>
+			  <version>3.4.2</version>
+			  <extensions>true</extensions>
+			  <configuration>
+			    <cloudHubDeployment>
+			      <uri>https://anypoint.mulesoft.com</uri>
+			      <muleVersion>${app.runtime}</muleVersion>
+			      <username>DanMarch2021</username>
+			      <password>Dan@salesforce19</password>
+			      <applicationName>MuleTeamCICDTest-service</applicationName>
+			      <environment>Sandbox</environment>
+			      <region>${region}</region>
+			      <workers>1</workers>
+			      <workerType>Micro</workerType>
+			     
+			    </cloudHubDeployment>
+			  </configuration>
+			</plugin>			
 			
 		</plugins>
 	</build>
