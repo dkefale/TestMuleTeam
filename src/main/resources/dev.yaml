@@ -1,6 +1,6 @@
 CloudHub:
     uri: "http://anypoint.mulesoft.com"
-    usrename: "DanMarch2021"
+    username: "DanMarch2021"
     password: "Dan@salesforce19"
     appName: "MuleTeamCICDTest"
     environment: "sandbox"
