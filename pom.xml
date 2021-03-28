@@ -35,7 +35,6 @@
 			      <password>Dan@salesforce19</password>
 			      <applicationName>MuleTeamCICDTest-service</applicationName>
 			      <environment>Sandbox</environment>
-			      <region>${region}</region>
 			      <workers>1</workers>
 			      <workerType>Micro</workerType>
 			     
