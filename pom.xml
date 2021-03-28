@@ -29,10 +29,10 @@
 				<cloudHubDeployment>
       				<uri>https://anypoint.mulesoft.com</uri>
       				<muleVersion>${app.runtime}</muleVersion>
-     				<username>${CloudHub.username}</username>
-     				<password>${CloudHub.password}</password>
-      				<applicationName>${CloudHub.appName}</applicationName>
-      				<environment>${CloudHub.environment}</environment>
+     				<username>DanMarch2021</username>
+     				<password>Dan@salesforce19</password>
+      				<applicationName>MuleteamCICDTest</applicationName>
+      				<environment>sandbox</environment>
       				
        			</cloudHubDeployment>
   		    	</configuration>
