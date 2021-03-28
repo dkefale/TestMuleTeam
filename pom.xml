@@ -33,6 +33,25 @@
 				<configuration>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+				<cloudHubDeployment>
+      				<uri>https://anypoint.mulesoft.com</uri>
+      				<muleVersion>${app.runtime}</muleVersion>
+     				<username>${CloudHub.username}</username>
+     				<password>${CloudHub.password}</password>
+      				<applicationName>${CloudHub.appName}</applicationName>
+      				<environment>${CloudHub.environment}</environment>
+       			</cloudHubDeployment>
+  		    	</configuration>
+  		    	
+			</plugin>
+			
 		</plugins>
 	</build>
 
@@ -50,6 +69,8 @@
             <classifier>mule-plugin</classifier>
         </dependency>
 	</dependencies>
+	
+	
 
 	<repositories>
           <repository>
