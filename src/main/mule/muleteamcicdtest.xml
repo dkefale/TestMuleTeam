@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="eee92f74-7013-4833-b400-55c5768951e8" >
-		<http:listener-connection host="0.0.0.0" port="8089" />
+		<http:listener-connection host="0.0.0.0" port="${http.port}" />
 	</http:listener-config>
 	<configuration-properties doc:name="Configuration properties" doc:id="7997ecc9-850c-4211-adf7-4902ac1b41be" file="dev.yaml" />
 	<flow name="muleteamcicdtestFlow" doc:id="4cc3f6f8-5b80-43e8-b160-07f61d0d0950" >
