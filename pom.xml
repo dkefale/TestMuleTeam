@@ -20,8 +20,6 @@
 
 	<build>
 		<plugins>
-			
-
 			<plugin>
 			  <groupId>org.mule.tools.maven</groupId>
 			  <artifactId>mule-maven-plugin</artifactId>
@@ -36,8 +34,7 @@
 			      <environment>Sandbox</environment>
 			      <workers>1</workers>
 			      <workerType>Micro</workerType>
-			      <objectStoreV2>true</objectStoreV2>
-			     
+			      <objectStoreV2>true</objectStoreV2>			     
 			    </cloudHubDeployment>
 			  </configuration>
 			</plugin>			
